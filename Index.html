@@ -302,32 +302,415 @@
         @media screen and (max-width:26.75rem) {
             .conteiner {
                 width: 26.75rem;
+                padding: 0 1rem;
             }
+
             nav {
-                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
+
             nav a {
-                font-size: 10px;
-                margin: 0 10px;
+                font-size: 14px;
+                margin: 0.5rem 0;
             }
+
+            .logo-header img {
+                margin: 0 auto;
+                width: 70px;
+            }
+
             .iconos {
-                margin: -12px;
+                justify-content: center;
+                margin: 1rem 0;
             }
+
             .iconos img {
-                margin: 1rem;
-                width: 50%;
+                width: 25px;
+                margin: 0 0.5rem;
             }
-            .header2 nav {
+
+            .banner img {
+                height: auto;
                 width: 26.75rem;
             }
-            .banner img {
-                height: 320px;
+
+            .belleza-pura {
+                text-align: center;
+                padding: 1rem;
+            }
+
+            .belleza-pura h2 {
+                font-size: 2rem;
+            }
+
+            .belleza-pura p {
+                font-size: 1rem;
+            }
+
+            .boton {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .favoritos {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .destacado {
+                width: 100%;
+                margin: 1rem 0;
+            }
+
+            .destacado img {
+                width: 100%;
+                height: auto;
+            }
+
+            .texto h2 {
+                font-size: 1rem;
+            }
+
+            .precio {
+                font-size: 1rem;
+                margin: 0 auto;
+            }
+
+            .rectangulo-verde {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .rectangulo-verde-oscuro {
+                width: 100%;
+                height: auto;
+            }
+
+            .rectangulo-verde-oscuro img {
+                margin: 0 auto;
                 width: 100%;
             }
-            .destacado {
-                justify-content: space-between;
-                margin: 1rem;
+
+            .contenido-texto {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+
+            .footer {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+
+            .footer .redes-sociales {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer .redes-sociales div {
+                margin: 1rem 0;
+            }
+
+            .footer .icons {
+                justify-content: center;
+                margin: 1rem 0;
+            }
+
+            .footer .icons img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .formulario {
+                flex-direction: column;
                 width: 100%;
+            }
+
+            .formulario input {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+
+            .formulario button {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:46.5rem) {
+            .conteiner {
+                width: 46.5rem;
+                padding: 0 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                font-size: 18px;
+                margin: 0.75rem 0;
+            }
+
+            .logo-header img {
+                margin: 0 auto;
+                width: 90px;
+            }
+
+            .iconos {
+                justify-content: center;
+                margin: 1.5rem 0;
+            }
+
+            .iconos img {
+                width: 30px;
+                margin: 0 0.75rem;
+            }
+
+            .banner img {
+                height: auto;
+                width: 100%;
+            }
+
+            .belleza-pura {
+                text-align: center;
+                padding: 2rem;
+            }
+
+            .belleza-pura h2 {
+                font-size: 3rem;
+            }
+
+            .belleza-pura p {
+                font-size: 1.25rem;
+            }
+
+            .boton {
+                font-size: 1.25rem;
+                padding: 0.75rem 1.5rem;
+            }
+
+            .favoritos {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .destacado {
+                width: 45%;
+                margin: 1rem;
+            }
+
+            .destacado img {
+                width: 100%;
+                height: auto;
+            }
+
+            .texto h2 {
+                font-size: 1.25rem;
+            }
+
+            .precio {
+                font-size: 1.25rem;
+                margin: 0 auto;
+            }
+
+            .rectangulo-verde {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .rectangulo-verde-oscuro {
+                width: 100%;
+                height: auto;
+            }
+
+            .rectangulo-verde-oscuro img {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .contenido-texto {
+                padding: 2rem;
+                font-size: 1.25rem;
+            }
+
+            .footer {
+                font-size: 1.25rem;
+                padding: 2rem;
+            }
+
+            .footer .redes-sociales {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer .redes-sociales div {
+                margin: 1.5rem 0;
+            }
+
+            .footer .icons {
+                justify-content: center;
+                margin: 1.5rem 0;
+            }
+
+            .footer .icons img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .formulario {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .formulario input {
+                width: 100%;
+                margin-bottom: 0.75rem;
+            }
+
+            .formulario button {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:90rem) {
+            .conteiner {
+                width: 90rem;
+                padding: 0 4rem;
+            }
+
+            nav {
+                justify-content: space-between;
+                padding: 0 2rem;
+            }
+
+            nav a {
+                font-size: 20px;
+                margin: 0 1rem;
+            }
+
+            .logo-header img {
+                width: 120px;
+                margin: 0;
+            }
+
+            .iconos {
+                justify-content: flex-end;
+                margin: 0;
+            }
+
+            .iconos img {
+                width: 40px;
+                margin: 0 1rem;
+            }
+
+            .banner img {
+                height: auto;
+                width: 100%;
+            }
+
+            .belleza-pura {
+                text-align: center;
+                padding: 3rem;
+            }
+
+            .belleza-pura h2 {
+                font-size: 4rem;
+            }
+
+            .belleza-pura p {
+                font-size: 1.5rem;
+            }
+
+            .boton {
+                font-size: 1.5rem;
+                padding: 1rem 2rem;
+            }
+
+            .favoritos {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .destacado {
+                width: 30%;
+                margin: 1.5rem;
+            }
+
+            .destacado img {
+                width: 100%;
+                height: auto;
+            }
+
+            .texto h2 {
+                font-size: 1.5rem;
+            }
+
+            .precio {
+                font-size: 1.5rem;
+                margin: 0 auto;
+            }
+
+            .rectangulo-verde {
+                flex-direction: row;
+                height: auto;
+                padding: 2rem;
+            }
+
+            .rectangulo-verde-oscuro {
+                width: 40%;
+                height: auto;
+            }
+
+            .rectangulo-verde-oscuro img {
+                width: 100%;
+                height: auto;
+            }
+
+            .contenido-texto {
+                padding: 2rem;
+                font-size: 1.5rem;
+            }
+
+            .footer {
+                font-size: 1.5rem;
+                padding: 3rem;
+            }
+
+            .footer .redes-sociales {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .footer .redes-sociales div {
+                margin: 0;
+            }
+
+            .footer .icons {
+                justify-content: flex-start;
+                margin: 2rem 0;
+            }
+
+            .footer .icons img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .formulario {
+                flex-direction: row;
+                width: 60%;
+                margin: 2rem auto;
+            }
+
+            .formulario input {
+                width: 70%;
+                margin: 0;
+            }
+
+            .formulario button {
+                width: 30%;
             }
         }
     </style>
