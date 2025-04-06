@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESSENZA</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        @font-face {
+            font-family: Roku;
+            src: url(../Fuentes/Roku-Regular.eot);
+            src: url(../Fuentes/Roku-Regularm.ttf) format('truetype'),
+                url(../Fuentes/Roku-Regular.woff) format('woff'),
+                url(../Fuentes/Roku-Regular.svg) format('svg'),
+        }
+
+        @font-face {
+            font-family: Raleway;
+            src: url(../Fuentes/Raleway.eot);
+            src: url(../Fuentes/Raleway.ttf) format('truetype'),
+                url(../Fuentes/Raleway.woff) format('woff'),
+                url(../Fuentes/Ralewayy.svg) format('svg'),
+        }
+
+        .conteiner {
+            width: 100%;
+        }
+
+        /*Header*/
+
+        .header1 {
+            display: flex;
+            background: #49673B;
+            padding: 10px 20px;
+            height: 20px;
+        }
+
+
+        .header2 {
+            font-family: Raleway;
+            display: flex;
+            justify-content: center;
+            background: #C4CEA1;
+            padding: auto;
+
+        }
+
+
+        nav a {
+            color: black;
+            padding: 2rem 1.5rem;
+            text-decoration: none;
+            margin-left: 90px;
+            font-size: 25px;
+
+        }
+
+        nav {
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+
+
+        header1 {
+            display: flex;
+            background: #49673B;
+            padding: 10px 20px;
+            height: 20px;
+        }
+
+
+        .header2 {
+            font-family: Raleway;
+            display: flex;
+            justify-content: center;
+            background: #C4CEA1;
+            padding: auto;
+
+        }
+
+
+        nav a {
+            color: black;
+            padding: 2rem 1.5rem;
+            text-decoration: none;
+            margin-left: 90px;
+            font-size: 25px;
+
+        }
+
+        nav {
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .logo-header img {
+            width: 100px;
+            height: auto;
+            display: flex;
+            margin-left: 95px;
+            margin-top: 7px;
+
+        }
+
+        .iconos {
+            padding: 1rem;
+            margin-left: 65px;
+        }
+
+
+
+
+
+        /*info-caja*/
+
+        .titulo {
+            font-family: Roku;
+            font-size: 95px;
+            color: #49673B;
+            text-align: center;
+            padding-top: 45px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            align-items: center;
+            font-family: Raleway;
+        }
+
+
+        .info-caja1 img,h3,p {
+
+            width: 35%;
+            font-size: 30px;
+            color: #2f4f27;
+            display: block;
+            margin: 53px 0px 0px 165px;
+            text-align: center;
+        }
+
+        .info-caja2 img,h3,p {
+            width: 40%;
+            font-size: 30px;
+            color: #2f4f27;
+            display: block;
+            margin: 53px 0px 0px 165px;
+            text-align: center;
+        }
+
+
+        .info-caja3 img,h3,p {
+
+            width: 40%;
+            font-size: 30px;
+            color: #2f4f27;
+            display: block;
+            margin: 53px 0px 0px 165px;
+            text-align: center;
+        }
+        
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        input,textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .form-row input {
+            flex: 1;
+        }
+
+        button {
+            background-color: #2f4f27;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+            align-self: flex-start;
+        }
+
+        hr {
+            margin: 30px auto;
+            width: 80%;
+        }
+
+
+        /*footer*/
+
+
+        .footer {
+            font-family: 'Roku';
+            font-size: 46px;
+            width: 100%;
+            background-color: #4b6439;
+            color: white;
+            padding: 40px 80px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            margin: 70px 0px 0;
+        }
+
+        .footer .redes-sociales {
+            font-family: Raleway;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 900px;
+            margin-top: 30px;
+        }
+
+        .footer .redes-sociales div {
+            flex: 1;
+            width: 200px;
+        }
+
+        .footer h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            font-family: Raleway;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 23px;
+            color: #e0e0e0;
+        }
+
+
+        .footer .formulario {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 560px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin-top: -55px;
+        }
+
+        .footer input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .footer button {
+            background-color: #dce85d;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .footer .publicidad {
+            font-family: Raleway;
+            margin-top: 23px;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: white;
+            margin-left: 56px;
+        }
+
+        .footer .icons {
+            display: flex;
+            gap: 15px;
+            padding: 1rem;
+            margin-left: 948px;
+            margin-top: 20px;
+        }
+
+        .footer .icons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .icons p {
+
+            font-family: Raleway;
+            margin: -37px -74px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="conteiner">
+
+        <header>
+
+            <div class="header1"></div>
+
+            <div class="header2">
+
+                <nav>
+                    <a href="Index.html">INICIO</a>
+                    <a href="catalogo.html">CATALOGO</a>
+
+                    <div class="logo-header">
+                        <img src="img/logo-header.png">
+                    </div>
+
+                    <a href="cuidado.html">CUIDADO</a>
+                    <a href="contacto.html">CONTACTO</a>
+
+                    <div class="iconos">
+                        <img src="img/Lupa.png">
+                        <img src="img/contacto1.png">
+                    </div>
+
+                </nav>
+
+            </div>
+        </header>
+
+
+
+        <div class="contenido">
+
+            <h1 class="titulo">CONTACTANOS</h1>
+
+
+
+
+            <div class="contact-info">
+                <div class="info-caja1">
+                    <img src="img/mensaje.png">
+                    <h3 style="font-family: Roku;">HABLEMOS</h3>
+                    <p>Whatsapp: 3005055451</p>
+                    <p>Tel: 3018644793</p>
+                    <p>Correo:<br> ESSENZA_cosmetics@gmail.com</p>
+                </div>
+                <div class="info-caja2">
+                    <img src="img/tiempo.png">
+
+                    <h3 style="font-family: Roku;">NUESTROS HORARIOS </h3>
+                    
+                    <p>Lunes a Viernes<br>9 am - 6pm</p>
+                    <p>Sábados<br>10 am - 4pm</p>
+                </div>
+                <div class="info-caja3">
+                    <img src="img/casa.png" style="margin-bottom: 295px;">
+                    <h3 style="font-family: Roku;">VISÍTANOS</h3>
+                    <p>Carrera 7#93-91<br>Bogotá D.C</p>
+                </div>
+            </div>
+
+            <hr />
+
+            <form>
+                <div class="form-row">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Número de teléfono" required>
+                </div>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea rows="4" placeholder="Comentario" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer class="footer">
+        <div>ESSENZA</div>
+
+        <div class="redes-sociales">
+            <div>
+                <h3>Redes sociales</h3>
+                <p>@Essenza_cosmeticos</p>
+            </div>
+            <div>
+                <h3>Sedes</h3>
+                <p>Carrera 7#93-91</p>
+            </div>
+            <div>
+                <h3>Contactanos</h3>
+                <p>3015864793</p>
+            </div>
+        </div>
+
+        <div class="icons">
+
+            <p>Siguenos</p>
+
+
+            <a href="https://www.instagram.com/">
+                <img src="img/instagram.png" alt="Instagram" style="width: auto; height: 45px;">
+            </a>
+
+            <a href="https://www.tiktok.com/link">
+                <img src="img/tik-tok.png" alt="TikTok">
+            </a>
+
+
+            <img src="img/contacto.png" alt="Home">
+
+            <a href="https://wa.me/" target="_blank">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+
+
+
+        <div class="formulario">
+            <input type="email" placeholder="Correo Electronico">
+            <button>ENVIAR</button>
+        </div>
+
+        <p class="publicidad">Sé parte de nuestra comunidad
+            ESSENZA</p>
+    </footer>
+
+
+
+</body>
+
+
+</html>

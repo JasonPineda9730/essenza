@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESSENZA</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        @font-face {
+            font-family: Roku;
+            src: url(../Fuentes/Roku-Regular.eot);
+            src: url(../Fuentes/Roku-Regularm.ttf) format('truetype'), url(../Fuentes/Roku-Regular.woff) format('woff'), url(../Fuentes/Roku-Regular.svg) format('svg'),
+        }
+        
+        @font-face {
+            font-family: Raleway;
+            src: url(../Fuentes/Raleway.eot);
+            src: url(../Fuentes/Raleway.ttf) format('truetype'), url(../Fuentes/Raleway.woff) format('woff'), url(../Fuentes/Ralewayy.svg) format('svg'),
+        }
+        
+        .conteiner {
+            width: 100%;
+            background: #efefef;
+        }
+        /*Header*/
+        
+        .header1 {
+            display: flex;
+            background: #49673B;
+            padding: 10px 20px;
+            height: 20px;
+        }
+        
+        .header2 {
+            font-family: Raleway;
+            display: flex;
+            justify-content: center;
+            background: #C4CEA1;
+        }
+        
+        nav a {
+            color: black;
+            padding: 2rem 1.5rem;
+            text-decoration: none;
+            margin-left: 90px;
+            font-size: 25px;
+        }
+        
+        nav {
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+        
+        .logo-header img {
+            width: 100px;
+            height: auto;
+            display: flex;
+            margin-left: 95px;
+            margin-top: 7px;
+        }
+        /*Banner*/
+        
+        .banner img {
+            width: 100%;
+            height: 800px;
+            background-image: url(../img/Mockups1.png);
+        }
+        
+        .iconos {
+            padding: 1rem;
+            margin-left: 65px;
+        }
+        
+        .belleza-pura {
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            top: 190px;
+            left: 90px;
+            font-size: 45px;
+            padding: 10px 20px;
+            font-family: Raleway;
+        }
+        
+        .belleza-pura h2 {
+            font-family: Roku;
+            font-size: 105px;
+            font-weight: normal;
+        }
+        
+        .boton {
+            font-family: Raleway;
+            position: absolute;
+            background: #6c8c5d;
+            color: white;
+            font-size: 35px;
+            transition: 0.3s;
+            padding: 10px 20px;
+            top: 210px;
+            left: 24px;
+        }
+        
+        h1 {
+            font-family: 'Roku';
+            text-align: center;
+            font-size: 95px;
+            padding: 6rem;
+            color: #49673B;
+            padding: 60px 0px 30px 0px;
+        }
+        /*Poductos-favoritos*/
+        
+        section.favoritos {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 4rem;
+        }
+        
+        .destacado {
+            width: 365px;
+            height: 690px;
+            margin: 2rem;
+            text-align: left;
+        }
+        
+        .destacado img {
+            width: 365px;
+            height: 401px;
+        }
+        
+        .texto {
+            margin-left: 0.5rem;
+            text-align: center;
+            font-family: Raleway;
+            padding: 30px 16px 0px 4px;
+        }
+        
+        .like img {
+            width: 52px;
+            height: 37px;
+            margin: -522px 107px 0px;
+            position: absolute;
+        }
+        
+        .precio {
+            width: 210px;
+            display: flex;
+            margin-left: 50px;
+            font-size: 33px;
+            background: #CADB8D;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        /*info-essenza*/
+        
+        .rectangulo-verde {
+            display: flex;
+            flex-direction: row;
+            height: 603px;
+            background-color: #dce3c3;
+            margin-bottom: 75px;
+            width: 100%;
+            align-items: center;
+        }
+        
+        .rectangulo-verde-oscuro {
+            width: 30%;
+            height: 602px;
+            background-color: #5a6d3c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .rectangulo-verde-oscuro img {
+            width: 100%;
+            margin-left: 348px;
+        }
+        
+        .contenido-texto {
+            font-family: Raleway;
+            padding: 0px 302px 0px 254px;
+            margin-right: 7px;
+            color: black;
+            font-size: 30px;
+        }
+        
+        .contenido-texto h2 {
+            font-family: Raleway;
+            font-size: 40px;
+            display: flex;
+            text-align: center;
+            padding: 19px 0px;
+        }
+        /*footer*/
+        
+        .footer {
+            font-family: 'Roku';
+            font-size: 46px;
+            width: 100%;
+            background-color: #4b6439;
+            color: white;
+            padding: 40px 80px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer .redes-sociales {
+            font-family: Raleway;
+            display: flex;
+            justify-content: space-between;
+            width: 900px;
+            margin-top: 30px;
+        }
+        
+        .footer .redes-sociales div {
+            flex: 1rem;
+            width: 200px;
+        }
+        
+        .footer h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+        }
+        
+        .footer p {
+            margin: 0;
+            font-size: 23px;
+            color: #e0e0e0;
+        }
+        
+        .footer .formulario {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 560px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin-top: -55px;
+        }
+        
+        .footer input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .footer button {
+            background-color: #dce85d;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .footer .publicidad {
+            font-family: Raleway;
+            margin-top: 23px;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: white;
+            margin-left: 56px;
+        }
+        
+        .footer .icons {
+            display: flex;
+            gap: 15px;
+            padding: 1rem;
+            margin-left: 948px;
+            margin-top: 20px;
+        }
+        
+        .footer .icons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        
+        .icons p {
+            font-family: Raleway;
+            margin: -37px -74px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        @media screen and (max-width:26.75rem) {
+            .conteiner {
+                width: 26.75rem;
+            }
+            nav {
+                display: flex;
+            }
+            nav a {
+                font-size: 10px;
+                margin: 0 10px;
+            }
+            .iconos {
+                margin: -12px;
+            }
+            .iconos img {
+                margin: 1rem;
+                width: 50%;
+            }
+            .header2 nav {
+                width: 26.75rem;
+            }
+            .banner img {
+                height: 320px;
+                width: 100%;
+            }
+            .destacado {
+                justify-content: space-between;
+                margin: 1rem;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="conteiner">
+
+        <header>
+
+            <div class="header1"></div>
+
+            <div class="header2">
+
+                <nav>
+                    <a href="Index.html">INICIO</a>
+                    <a href="catalogo.html">CATALOGO</a>
+
+                    <div class="logo-header">
+                        <img src="img/logo-header.png">
+                    </div>
+
+                    <a href="cuidado.html">CUIDADO</a>
+                    <a href="contacto.html">CONTACTO</a>
+
+                </nav>
+                <div class="iconos">
+                    <img src="img/Lupa.png">
+                    <img src="img/contacto1.png">
+                </div>
+
+
+            </div>
+        </header>
+
+
+        <main>
+            <section>
+                <div class="banner">
+                    <img src="img/Mockups1.png" alt="banner">
+                </div>
+            </section>
+
+            <section>
+
+                <div class="belleza-pura">
+
+                    <h2>Essenza</h2>
+                    <p>Belleza pura y confiable</p>
+                    <a href="contacto.html" class="boton">Conócenos</a>
+
+                </div>
+
+            </section>
+
+
+        </main>
+    </div>
+
+    <h1>FAVORITOS</h1>
+
+
+    <section class="favoritos">
+
+
+        <div class="destacado">
+            <img src="img/imagen1-home.png">
+
+            <div class="texto">
+                <h2>Aceite natural a base de almendras con acído y aluronico</h2>
+                <br>
+                <div class="like"><img src="img/like.png"></div>
+                <br>
+                <div class="precio">$18.000 col</div>
+            </div>
+
+        </div>
+
+
+
+        <div class="destacado">
+            <img src="img/image2-home.png">
+            <br>
+            <div class="texto">
+                <h2>Crema hidrarante con extrato de aguacate mansanilla y coco</h2>
+                <br>
+                <div class="like"><img src="img/like-2.png"></div>
+                <br>
+                <div class="precio">$25.000 col</div>
+            </div>
+        </div>
+
+
+
+        <div class="destacado">
+            <img src="img/imagen1-home.png">
+            <br>
+            <div class="texto">
+                <h2>Jabones organicos con ingredientes como oliva, miel, coco y eucalipto</h2>
+                <br>
+                <div class="like"><img src="img/like.png"></div>
+                <br>
+                <div class="precio">$18.000 col</div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+    <div class="rectangulo-verde">
+        <div class="rectangulo-verde-oscuro">
+            <img src="img/girl-verde.jpg" alt="Mujer aplicándose mascarilla">
+        </div>
+        <div class="contenido-texto">
+            <h2>Somos ESSENZA</h2>
+            <p>
+                Essenza es una marca de cosméticos naturales que está dedicada al cuidado de la piel, utilizando productos naturales que aseguran la frescura y cuidado necesarios para nuestro organismo, libres de químicos dañinos y amigables con el medio ambiente.
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div>ESSENZA</div>
+
+        <div class="redes-sociales">
+            <div>
+                <h3>Redes sociales</h3>
+                <p>@Essenza_cosmeticos</p>
+            </div>
+            <div>
+                <h3>Sedes</h3>
+                <p>Carrera 7#93-91</p>
+            </div>
+            <div>
+                <h3>Contactanos</h3>
+                <p>3015864793</p>
+            </div>
+        </div>
+
+        <div class="icons">
+
+            <p>Siguenos</p>
+
+            <a href="https://www.instagram.com/">
+                <img src="img/instagram.png" alt="Instagram" style="width: auto; height: 45px;">
+            </a>
+
+            <a href="https://www.tiktok.com/link">
+                <img src="img/tik-tok.png" alt="TikTok">
+            </a>
+
+            <a href="contacto.html">
+                <img src="img/contacto.png" alt="Home">
+            </a>
+
+            <a href="https://wa.me/" alt="whatsapp">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+            </a>
+
+        </div>
+
+        <div class="formulario">
+            <input type="email" placeholder="Correo Electronico">
+            <button>ENVIAR</button>
+        </div>
+
+        <p class="publicidad">Sé parte de nuestra comunidad ESSENZA
+        </p>
+    </footer>
+
+
+
+</body>
+
+
+</html>

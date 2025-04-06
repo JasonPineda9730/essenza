@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESSENZA</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        @font-face {
+            font-family: Roku;
+            src: url(../Fuentes/Roku-Regular.eot);
+            src: url(../Fuentes/Roku-Regularm.ttf) format('truetype'),
+                 url(../Fuentes/Roku-Regular.woff) format('woff'),
+                 url(../Fuentes/Roku-Regular.svg) format('svg'),
+        }
+
+        @font-face {
+            font-family: Raleway;
+            src: url(../Fuentes/Raleway.eot);
+            src: url(../Fuentes/Raleway.ttf) format('truetype'),
+                 url(../Fuentes/Raleway.woff) format('woff'),
+                 url(../Fuentes/Ralewayy.svg) format('svg'),
+
+            
+        }
+
+        .conteiner {
+            width: 100%;
+            background: #dfe0d9;
+        }
+
+        /*Header*/
+
+        .header1 {
+            display: flex;
+            background: #49673B;
+            padding: 10px 20px;
+            height: 20px;
+        }
+
+
+        .header2 {
+            font-family: Raleway;
+            display: flex;
+            justify-content: center;
+            background: #C4CEA1;
+            padding: auto;
+
+        }
+
+
+        nav a {
+            color: black;
+            padding: 2rem 1.5rem;
+            text-decoration: none;
+            margin-left: 90px;
+            font-size: 25px;
+
+        }
+
+        nav {
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+
+
+        /*Banner*/
+
+        article img {
+            width: 100%;
+            height: auto;
+            background-image: url(../img/Mockups1.png);
+        }
+
+
+        .baner {
+            color: white;
+            max-width: 400px;
+        }
+
+        .essenza-header {
+            color: white;
+            position: absolute;
+            top: 241px;
+            left: 140px;
+            font-size: 100px;
+            padding: 10px 20px;
+        }
+
+        .belleza-pura {
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            top: 345px;
+            left: 140px;
+            font-size: 45px;
+            padding: 10px 20px;
+            font-family: Raleway;
+        }
+
+        .boton {
+            font-family: Raleway;
+            position: absolute;
+            background: #6c8c5d;
+            color: white;
+            text-decoration: none;
+            font-size: 35px;
+            transition: 0.3s;
+            padding: 10px 20px;
+            top: 456px;
+            left: 159px
+        }
+
+
+
+        .iconos {
+            padding: 1rem;
+            margin-left: 65px;
+        }
+
+        h1 {
+            font-family: 'Roku';
+            text-align: center;
+            font-size: 60px;
+            padding: 6rem;
+            color: #49673B;
+
+        }
+
+
+        .logo-header img {
+            width: 100px;
+            height: auto;
+            display: flex;
+            margin-left: 95px;
+            margin-top: 7px;
+
+        }
+
+        /*Poductos-favoritos*/
+
+        h1 {
+            font-size: 95px;
+            text-align: center;
+            margin: -45px 0px -66px 0px;
+        }
+
+        h2{
+            margin-top: 44px;
+
+
+        }
+
+        section.favoritos {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 400px;
+
+        }
+
+        .destacado {
+            width: 365px;
+            height: 690px;
+            margin: 20px 32px 38px 0px;
+            text-align: left;
+
+        }
+
+
+        .destacado img {
+            width: 100%;
+            height: 464px;
+        }
+
+        .texto {
+            margin-left: 0.5rem;
+            text-align: center;
+            font-family: Raleway;
+            padding: 0px 3px 0px 0px;
+            font-size: 20px;
+        }
+
+        .texto p {
+
+            margin-left: 0.5rem;
+            text-align: center;
+            font-family: Raleway;
+            padding: 30px 3px 0px 0px;
+            font-size: 27px;
+        }
+
+        .like img {
+            width: 52px;
+            height: 37px;
+            margin: -522px 107px 0px;
+            position: absolute;
+        }
+
+        .precio {
+            width: 210px;
+            display: flex;
+            font-size: 33px;
+            background: #CADB8D;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: -6px 0px 0px 70px;
+        }
+
+
+        /*info-essenza*/
+
+        .rectangulo-verde {
+
+            width: 90%;
+            height: 141px;
+            display: flex;
+            flex-direction: row;
+            background-color: #D4ED78;
+            align-items: center;
+            border-radius: 20px;
+            margin: 0px 0px 30px 76px;
+        }
+
+
+
+
+        .contenido-texto {
+
+            font-family: Raleway;
+            padding: 0px 189px 0px 187px;
+            margin-right: 7px;
+            color: black;
+            font-size: 25px;
+            text-align: center;
+
+        }
+
+        .contenido-texto h2 {
+
+            font-family: Raleway;
+            font-size: 35px;
+            display: flex;
+            text-align: center;
+            padding: 19px 0px;
+
+        }
+
+        /*footer*/
+
+
+        .footer {
+            font-family: 'Roku';
+            font-size: 46px;
+            width: 100%;
+            background-color: #4b6439;
+            color: white;
+            padding: 40px 80px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            margin-top: 90px;
+        }
+
+        .footer .redes-sociales {
+            font-family: Raleway;
+            display: flex;
+            justify-content: space-between;
+            width: 900px;
+            margin-top: 30px;
+        }
+
+        .footer .redes-sociales div {
+            flex: 1;
+            width: 200px;
+        }
+
+        .footer h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 23px;
+            color: #e0e0e0;
+        }
+
+        .footer .formulario {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 560px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin-top: -55px;
+        }
+
+        .footer input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .footer button {
+            background-color: #dce85d;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .footer .publicidad {
+            font-family: Raleway;
+            margin-top: 23px;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: white;
+            margin-left: 56px;
+        }
+
+        .footer .icons {
+            display: flex;
+            gap: 15px;
+            padding: 1rem;
+            margin-left: 948px;
+            margin-top: 20px;
+        }
+
+        .footer .icons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .icons p {
+
+            font-family: Raleway;
+            margin: -37px -74px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="conteiner">
+
+        <header>
+
+            <div class="header1"></div>
+
+            <div class="header2">
+
+                <nav>
+                    <a href="Index.html">INICIO</a>
+                    <a href="catalogo.html">CATALOGO</a>
+
+                    <div class="logo-header">
+                        <img src="img/logo-header.png">
+                    </div>
+
+                    <a href="cuidado.html">CUIDADO</a>
+                    <a href="contacto.html">CONTACTO</a>
+
+                    <div class="iconos">
+                        <img src="img/Lupa.png">
+                        <img src="img/contacto1.png">
+                    </div>
+
+                </nav>
+
+            </div>
+        </header>
+
+
+
+        <h1>CUIDADO CORPORAL</h1>
+
+
+        <div class="rectangulo-verde">
+
+            <div class="contenido-texto">
+                <p>
+                    Renueva tu piel con nuestras mascarillas corporales elaboradas con ingredientes 100% naturales. Cada
+                    fórmula está diseñada para brindarte beneficios únicos
+                </p>
+            </div>
+        </div>
+
+
+        <section class="favoritos">
+
+            <div class="destacado">
+                <img src="img/corporal-1.png">
+                <br>
+                <div class="texto">
+                    <h2>Mascarillas Corporales</h2>
+                    <p>Aloe Vera & Té Verde: Hidratación y frescura.</p>
+                    <p>Carbón Activado & Arcilla:Limpieza profunda y detox.</p>
+                    <p>Cacao & Miel: Nutrición y luminosidad.</p>
+                    <p>Avena & Manzanilla: frescura y suavidad.</p>
+                    <br>
+                    <div class="like"><img src="img/like.png"></div>
+                    <br>
+                    <div class="precio">$15.000 col</div>
+                </div>
+
+            </div>
+
+
+
+            <div class="destacado">
+                <img src="img/corporal-2.png">
+                <br>
+                <div class="texto">
+                    <h2>Crema Hidratante</h2>
+                    <p>Hidratante enriquecido con aloe vera, pepino y extracto de cítricos. Su fórmula ligera
+                        proporciona hidratación profunda y frescura</p>
+                    <div class="like"><img src="img/like-2.png"></div>
+                    <br>
+                    <div class="precio">$20.000 col</div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+    <div class="rectangulo-verde">
+
+        <div class="contenido-texto">
+            <p>
+                Libres de químicos agresivos, perfectas para una rutina de cuidado consciente. ¡Elige la tuya y
+                consiente tu piel!
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div>ESSENZA</div>
+
+        <div class="redes-sociales">
+            <div>
+                <h3>Redes sociales</h3>
+                <p>@Essenza_cosmeticos</p>
+            </div>
+            <div>
+                <h3>Sedes</h3>
+                <p>Carrera 7#93-91</p>
+            </div>
+            <div>
+                <h3>Contactanos</h3>
+                <p>3015864793</p>
+            </div>
+        </div>
+
+        <div class="icons">
+
+            <p>Siguenos</p>
+
+            <a href="https://www.instagram.com/">
+                <img src="img/instagram.png" alt="Instagram" style="width: auto; height: 45px;">
+            </a>
+
+            <a href="https://www.tiktok.com/link">
+                <img src="img/tik-tok.png" alt="TikTok">
+            </a>
+
+            <a href="contacto.html">
+                <img src="img/contacto.png" alt="Home">
+            </a>
+
+            <a href="https://wa.me/" alt="whatsapp">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+            </a>
+
+        </div>
+
+        <div class="formulario">
+            <input type="email" placeholder="Correo Electronico">
+            <button>ENVIAR</button>
+        </div>
+
+        <p class="publicidad">Sé parte de nuestra comunidad
+            ESSENZA</p>
+    </footer>
+
+
+
+</body>
+
+
+</html>
